@@ -114,57 +114,60 @@ ________________________________________
 | Carte	|   date_sortie_carte| 	Date officielle de sortie	   |            Date	  |        32 bits  |
 | Carte	 |  statut_carte	  |   Carte active ou retirée	  |               Booléen	   |     1 bit  |
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Extension	id_extension	Identifiant unique extension	Nombre entier	32 bits
-Extension	nom_extension	Nom officiel	Texte	100 caractères
-Extension	date_sortie_extension	Date officielle	Date	32 bits
-Extension	generation	Génération	Nombre entier	16 bits
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Extension|	id_extension|	Identifiant unique extension|	Nombre entier	|32 bits|
+|Extension|	nom_extension|	Nom officiel	|Texte	|100 caractères|
+|Extension|	date_sortie_extension|	Date officielle|	Date|	32 bits|
+|Extension|	generation	|Génération	|Nombre entier	|16 bits|
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Illustrateur	id_illustrateur	Identifiant unique illustrateur	Nombre entier	32 bits
-Illustrateur	nom_illustrateur	Nom officiel	Texte	100 caractères
-Illustrateur	nationalite	Pays d’origine	Texte	50 caractères
-Illustrateur	statut_illustrateur	Actif ou inactif	Booléen	1 bit
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Illustrateur|	id_illustrateur|	Identifiant unique illustrateur	|Nombre entier|	32 bits|
+|Illustrateur|	nom_illustrateur	|Nom officiel|	Texte	|100 caractères|
+|Illustrateur|	nationalite|	Pays d’origine	|Texte|	50 caractères|
+|Illustrateur|	statut_illustrateur|	Actif ou inactif|	Booléen	|1 bit|
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Attaque	id_attaque	Identifiant unique attaque	Nombre entier	32 bits
-Attaque	nom_attaque	Nom de l’attaque	Texte	100 caractères
-Attaque	puissance	Valeur numérique des dégâts	Nombre entier	16 bits
-Attaque	cout_energie	Nombre d’énergies requises	Nombre entier	8 bits
-Attaque	description_attaque	Effet détaillé	Texte	300 caractères
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Attaque|	id_attaque|	Identifiant unique attaque|	Nombre entier|	32 bits|
+|Attaque|	nom_attaque|	Nom de l’attaque	|Texte|	100 caractères|
+|Attaque|	puissance|	Valeur numérique des dégâts|	Nombre entier|	16 bits|
+|Attaque|	cout_energie|	Nombre d’énergies requises	|Nombre entier|	8 bits|
+|Attaque|	description_attaque|	Effet détaillé	|Texte	|300 caractères|
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Paquet	type_paquet	Booster, Coffret, Display	Texte	30 caractères
-Paquet	code_produit	Code SKU interne	Texte	30 caractères
-Paquet	prix_reference	Prix catalogue	Nombre décimal	32 bits
-Paquet	statut_paquet	Actif ou retiré	Booléen	1 bit
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Paquet|	type_paquet|	Booster, Coffret, Display	|Texte|	30 caractères|
+|Paquet	|code_produit	|Code SKU interne	|Texte	|30 caractères|
+|Paquet	|prix_reference|	Prix catalogue	|Nombre décimal	|32 bits|
+|Paquet|	statut_paquet|	Actif ou retiré	|Booléen|	1 bit|
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Livraison	date_expedition	Date d’envoi	Date	32 bits
-Livraison	date_reception_prevue	Date estimée d’arrivée	Date	32 bits
-Livraison	statut_livraison	État logistique	Texte	20 caractères
-Livraison	numero_suivi	Numéro tracking transporteur	Texte	50 caractères
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Livraison|	date_expedition	|Date d’envoi|	Date|	32 bits|
+|Livraison	|date_reception_prevue|	Date estimée d’arrivée	|Date	|32 bits|
+|Livraison|	statut_livraison|	État logistique|	Texte|	20 caractères|
+|Livraison|	numero_suivi|	Numéro tracking transporteur|	Texte	|50 caractères|
 ________________________________________
-Entité	Donnée	Signification	Type	Taille
-Lieu	id_lieu	Identifiant unique lieu	Nombre entier	32 bits
-Lieu	nom_lieu	Nom du site	Texte	100 caractères
-Lieu	type_lieu	Usine / Entrepôt / Magasin	Texte	30 caractères
-Lieu	adresse	Adresse complète	Texte	200 caractères
-Lieu	pays	Pays	Texte	50 caractères
-Lieu	statut_lieu	Actif ou fermé	Booléen	1 bit
+|Entité|	Donnée	 |         Signification	     |                     Type	      |   Taille  |
+|----------|:-------------:|:-------------:|:-------------:|------:| 
+|Lieu|	id_lieu	|Identifiant unique lieu|	Nombre entier|	32 bits|
+|Lieu|nom_lieu|	Nom du site|	Texte|	100 caractères|
+|Lieu	|type_lieu|	Usine / Entrepôt / Magasin|	Texte|	30 caractères|
+|Lieu|	adresse|	Adresse complète	|Texte	|200 caractères|
+|Lieu|	pays|	Pays|	Texte|	50 caractères|
+|Lieu|	statut_lieu|	Actif ou fermé	|Booléen	|1 bit|
 ________________________________________
 ✅ Résultat
-Tu disposes maintenant :
-•	Des règles de gestion métier (niveau MCD – expression des besoins)
-•	Du dictionnaire de données brutes (base pour MCD puis MLD)
-L’étudiant peut désormais :
+Tu disposes maintenant :  
+•	Des règles de gestion métier (niveau MCD – expression des besoins)  
+•	Du dictionnaire de données brutes (base pour MCD puis MLD)  
+L’étudiant peut désormais :  
 1.	Identifier les entités
 2.	Déterminer les associations
 3.	Poser les cardinalités
 4.	Construire le MCD (Modèle Conceptuel de Données)
-5.	Puis passer au MLD et au MPD
-Si tu veux, je peux ensuite te produire :
-•	Le MCD textuel complet avec cardinalités
-•	Ou une préparation directe pour MERISE (entités + associations structurées)
+5.	Puis passer au MLD et au MPD   
 
-Après application des instructions de ChatGPT, on obtient le MCD suivant : 
+Après application des instructions de ChatGPT, nous avons choisi de rajouter quelques attributs au niveau des caractéristiques de la carte qui nous semblaient plus réalistes : pos_série, un numéro non-unique qui est une deuxième facteur de rareté de la carte. On obtient alors le MCD suivant : 
