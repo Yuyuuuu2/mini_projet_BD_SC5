@@ -170,6 +170,6 @@ L’étudiant peut désormais :
 4.	Construire le MCD (Modèle Conceptuel de Données)
 5.	Puis passer au MLD et au MPD   
 
-Après application des instructions de ChatGPT, nous avons choisi de rajouter quelques attributs au niveau des caractéristiques de la carte qui nous semblaient plus réalistes : pos_série, un numéro non-unique qui est une deuxième facteur de rareté de la carte. On obtient alors le MCD suivant :   
+Après application des instructions de ChatGPT, nous avons choisi de rajouter quelques attributs au niveau des caractéristiques de la carte qui nous semblaient plus réalistes : pos_série, un numéro non-unique qui est une deuxième facteur de rareté de la carte ; ainsi que la faiblesse et résistance de la carte. Nous avons aussi décidé de rajouter les stocks de paquets présents dans chaque lieu. On obtient alors le MCD suivant :   
 <img width="1070" height="588" alt="image" src="https://github.com/user-attachments/assets/e6aed3ba-ab10-482b-bee1-8835abd57bc9" />
 
