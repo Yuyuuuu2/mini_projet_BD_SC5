@@ -5,9 +5,9 @@
 ## INTRODUCTION
 
 Ce ReadMe sert à détailler le processus suivi lors du Mini-Projet de la matière TI404 – Base de données 1 : Concepts de base. Notre équipe est constituée de 3 personnes :  
-Kevin-Seng TEK (pseudonyme git : )  
-Isidore PONTAY (pseudonyme git : )  
-Myriam MOUTTALIB (pseudonyme git : )  
+Kevin-Seng TEK (pseudonyme git : Yuyuuuu2)  
+Isidore PONTAY (pseudonyme git : 3easydore)  
+Myriam MOUTTALIB (pseudonyme git : MyriamMou)  
 
 Notre idée est de créer une base de données destinée à une entreprise chargée de la distribution de cartes Pokémon. Elle doit donc pouvoir contenir à la fois des informations sur les cartes mais aussi sur les processus de livraisons et les lieux de destination. 
 
