@@ -171,5 +171,19 @@ L’étudiant peut désormais :
 5.	Puis passer au MLD et au MPD   
 
 Après application des instructions de ChatGPT, nous avons choisi de rajouter quelques attributs au niveau des caractéristiques de la carte qui nous semblaient plus réalistes : pos_série, un numéro non-unique qui est une deuxième facteur de rareté de la carte ; ainsi que la faiblesse et résistance de la carte. Nous avons aussi décidé de rajouter les stocks de paquets présents dans chaque lieu. On obtient alors le MCD suivant :   
-<img width="1070" height="588" alt="image" src="https://github.com/user-attachments/assets/e6aed3ba-ab10-482b-bee1-8835abd57bc9" />
+<img width="1070" height="588" alt="image" src="https://github.com/user-attachments/assets/e6aed3ba-ab10-482b-bee1-8835abd57bc9" />  
+
+La MLD correspondante est la suivante : 
+Attaque = (atk_id INT, atk_nom VARCHAR(100), atk_puissance SMALLINT, atk_cout_energie BYTE, atk_description VARCHAR(300));  
+Paquet = (paquet_code_SKU VARCHAR(30), paquet_type VARCHAR(30), paquet_prix_reference DECIMAL(6,2), paquet_statut LOGICAL);  
+Extension = (ext_id INT, ext_nom VARCHAR(100), ext_date_sortie DATE, ext_generation SMALLINT);  
+Livraison = (livraison_numero_suivi VARCHAR(50), livraison_date_expedition DATE, livraison_date_reception_prevue DATE, livraison_statut VARCHAR(20));  
+Illustrateur = (ill_ID INT, ill_nom VARCHAR(100), ill_nationalite VARCHAR(50), ill_statut LOGICAL);  
+Lieu = (lieu_ID INT, lieu_nom VARCHAR(100), lieu_type VARCHAR(30), lieu_pays VARCHAR(50), lieu_adresse VARCHAR(200), lieu_stocks_paquets INT, lieu_statut LOGICAL);  
+Carte = (c_id INT, c_pos_série SMALLINT, c_type VARCHAR(20), c_nom VARCHAR(100), c_langue VARCHAR(30), c_rarete VARCHAR(30), c_PV SMALLINT, c_résistance VARCHAR(50), c_faiblesse VARCHAR(50), c_texte_effet VARCHAR(500), c_date_sortie DATE, c_statut LOGICAL, #c_id_provient_de*, #paquet_code_SKU*, #ext_id);  
+Possède = (#c_id, #atk_id);  
+A_dessiné = (#c_id, #ill_ID);  
+Distribue = (#paquet_code_SKU, #livraison_numero_suivi, #lieu_ID);  
+
+
 
