@@ -3,9 +3,9 @@ USE pokemon_db;
 
 CREATE TABLE Attaque (
     atk_id INT AUTO_INCREMENT,
-    atk_nom VARCHAR(100) NOT NULL,
+    atk_nom VARCHAR(100),
     atk_puissance SMALLINT,
-    atk_cout_energie TINYINT,
+    atk_cout_energie BYTE,
     atk_description VARCHAR(300),
     PRIMARY KEY (atk_id)
 );
@@ -14,7 +14,7 @@ CREATE TABLE Paquet (
     paquet_code_SKU VARCHAR(30),
     paquet_type VARCHAR(30),
     paquet_prix_reference DECIMAL(6,2),
-    paquet_statut BOOLEAN,
+    paquet_statut LOGICAL,
     PRIMARY KEY (paquet_code_SKU)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE Illustrateur (
     ill_ID INT AUTO_INCREMENT,
     ill_nom VARCHAR(100),
     ill_nationalite VARCHAR(50),
-    ill_statut BOOLEAN,
+    ill_statut LOGICAL,
     PRIMARY KEY (ill_ID)
 );
 
@@ -49,7 +49,7 @@ CREATE TABLE Lieu (
     lieu_pays VARCHAR(50),
     lieu_adresse VARCHAR(200),
     lieu_stocks_paquets INT,
-    lieu_statut BOOLEAN,
+    lieu_statut LOGICAL,
     PRIMARY KEY (lieu_ID)
 );
 
@@ -65,7 +65,7 @@ CREATE TABLE Carte (
     c_faiblesse VARCHAR(50),
     c_texte_effet VARCHAR(500),
     c_date_sortie DATE,
-    c_statut BOOLEAN,
+    c_statut LOGICAL,
     c_id_provient_de INT,
     paquet_code_SKU VARCHAR(30),
     ext_id INT,
