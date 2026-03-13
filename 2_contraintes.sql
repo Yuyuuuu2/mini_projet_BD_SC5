@@ -10,6 +10,9 @@ ADD CONSTRAINT chk_PV_positive CHECK (c_PV >= 0);
 
 ALTER TABLE Lieu
 ADD CONSTRAINT chk_stock_positive CHECK (lieu_stocks_paquets >= 0);
+ADD CONSTRAINT chk_lieu_type
+CHECK (lieu_type IN ('Entrepôt', 'Usine', 'Magasin'));
 
 ALTER TABLE Livraison
 ADD CONSTRAINT chk_dates_livraison CHECK (livraison_date_reception_prevue >= livraison_date_expedition);
+
