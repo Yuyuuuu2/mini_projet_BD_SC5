@@ -187,5 +187,20 @@ Distribue = (#paquet_code_SKU, #livraison_numero_suivi, #lieu_ID);
 
 
 On va mettre en place la situation réelle: un responsable logistique et marketing qui va utiliser la Base de Données afin de:
-- 
+- Vérifier quels paquets sont distribués dans quels lieux
+- Suivre les livraisons et leur statut
+- Analyser quelles cartes sont dans quelles extensions et quelles attaques elles possèdent
+- Analyser les stocks disponibles
+- Etudier les statistiques des différentes cartes
+
+Par exemple il peut rechercher:
+- La liste des cartes d'une extension donnée 
+- Les cartes d'un certain type
+- Les lieux ayant un certain stock de paquets
+- Le nombre de cartes par extension
+- Les attaques les plus puissantes
+- Les cartes avec le plus de PV
+- Les livraisons associées au paquet
+- Les paquets distribués par lieu
+
 
