@@ -186,4 +186,6 @@ A_dessiné = (#c_id, #ill_ID);
 Distribue = (#paquet_code_SKU, #livraison_numero_suivi, #lieu_ID);  
 
 
+On va mettre en place la situation réelle: un responsable logistique et marketing qui va utiliser la Base de Données afin de:
+- 
 
