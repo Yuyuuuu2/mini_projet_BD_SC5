@@ -173,7 +173,11 @@ L’étudiant peut désormais :
 Après application des instructions de ChatGPT, nous avons choisi de rajouter quelques attributs au niveau des caractéristiques de la carte qui nous semblaient plus réalistes : pos_série, un numéro non-unique qui est une deuxième facteur de rareté de la carte ; ainsi que la faiblesse et résistance de la carte. Nous avons aussi décidé de rajouter les stocks de paquets présents dans chaque lieu. On obtient alors le MCD suivant :   
 <img width="1070" height="588" alt="image" src="https://github.com/user-attachments/assets/e6aed3ba-ab10-482b-bee1-8835abd57bc9" />  
 
-La MLD correspondante est la suivante : 
+
+
+## PARTIE 2
+
+La MLD correspondante est la suivante :   
 Attaque = (atk_id INT, atk_nom VARCHAR(100), atk_puissance SMALLINT, atk_cout_energie BYTE, atk_description VARCHAR(300));  
 Paquet = (paquet_code_SKU VARCHAR(30), paquet_type VARCHAR(30), paquet_prix_reference DECIMAL(6,2), paquet_statut LOGICAL);  
 Extension = (ext_id INT, ext_nom VARCHAR(100), ext_date_sortie DATE, ext_generation SMALLINT);  
@@ -184,9 +188,6 @@ Carte = (c_id INT, c_pos_série SMALLINT, c_type VARCHAR(20), c_nom VARCHAR(100)
 Possède = (#c_id, #atk_id);  
 A_dessiné = (#c_id, #ill_ID);  
 Distribue = (#paquet_code_SKU, #livraison_numero_suivi, #lieu_ID);  
-
-## PARTIE 2
-
 
 On va mettre en place la situation réelle: un responsable logistique et marketing qui va utiliser la Base de Données afin de:
 - Vérifier quels paquets sont distribués dans quels lieux
